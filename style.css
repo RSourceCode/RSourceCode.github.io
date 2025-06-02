@@ -4,13 +4,20 @@ html{
     margin: 0;
     padding: 0;
 }
-
+i {
+    color:lawngreen;
+    display: inline;
+    border: solid  lawngreen 0.1vw;
+    border-radius: 50%;
+    padding: 1.3vmin;
+    font-size: 2.2vmin;
+}
 body {
     height: 99.5vh;
     width: 50vw;
     background-color: #001000;
     color: white;
-    padding:  0.5% 20% 0 20%; 
+    padding:  0.5% 2% 0 20%; 
     font-size: 3vmin;
 }
 /* General Used styling */
@@ -29,23 +36,30 @@ body {
     padding: 4vh 0 4vh 0;
     font-size: 5vmin;
 }
+
 /* Navigation Bar */
 .navbar{
+    /* background-color: #1c1a1e; */
     display: flex;
-    position: fixed;
+    width: 75vw;
+    /* position: fixed;
     top:0;
     left: 0;
-    right: 0;
+    right: 0; */
 }
 .nav-content{
+    
+    /* width: 100vw; */
+    margin-left: 30vw;
     display: flex;
     width:100%;
     justify-content: space-evenly;
+    align-items: center;
 }
 .nav-button{
     background-color:lawngreen;
     height: 5vh;
-    width: 5vw;
+    width: 6vw;
     border: none;
     border-radius: 2.5vh;
     font-size: 2.3vmin; 
@@ -53,34 +67,49 @@ body {
 .nav-options{
     color: white;
     text-decoration: none;
+    font-size: 2.4vmin;
 }
 .nav-options:hover{
     text-decoration: underline;
 }
 .nav-button:hover{
     background-color: aliceblue;
+    cursor: pointer;
 }
 
 
 /* Home */
+.intro{
+    display: flex;
+    width: 80vw;
+    height: 55vh;
+    margin-top: 15vmin;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .intro-tag{
     margin: none;
     padding: none;
+    font-size: 3vmin;
 }
 .intro-line{
     margin: none;
     padding: none;
-    font-size: 10vmin;
+    font-size: 8vmin;
 }
-.intro{
-    display: flex;
-    width: 80vw;
-    height: 60vh;
-    margin-top: 15vmin;
+.intro-description{
+    width: 40vw;
+    margin-bottom: 4vh;
+    font-size: 2.4vmin;
+    word-spacing: 0.2vmin;
+    letter-spacing: 0.1vmin;
+}
 
-}
 .intro-image-border-wrapper{
-    padding-left: 20vw;
+    padding-left: 2vw;
 }
 .intro-image-border{
     height:47vmin;
@@ -98,36 +127,64 @@ body {
     background-image: url("Rahul.jpg");
     background-size: cover;
     justify-content: center;
-    
+   
 }
-
-
-
-
-
-.about-basic-details{
-    display: flex;
-    justify-content: space-evenly;
-}
-.about-details{
-    padding: 2vh 0 2vh 0;
-}
-
 .contact-icons{
     padding-top: 2vh;
     display: flex;
     height:8vh;
-    width:30vw;
-    justify-content: space-evenly;
+    width:33vw;
+    justify-content: space-between;
+    align-items: center;
 }
-.contact-option{
-    color: white;
+.download-cv{
+    background-color: transparent;
+    color: lawngreen;
+    height: 7vh;
+    width: 13vw;
+    border-radius: 3.5vh;
+    border: lawngreen groove 1px;
+    text-align: center;
+    margin-right: 3vw;
 }
-footer{
+.existence-heading{
+    text-align: center;
+    height: 3vh;
     width: 70vw;
-    /* position: absolute;
-    bottom:0px; */
+    margin-bottom: 3vh;
 }
+.existence{
+    height: 12vh;
+    width: 70vw;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 3.3vmin;
+}
+.existence-val{
+    display: inline;
+    font-size: 4vmin;
+    color: white;
+
+}
+.existence-box{
+    height: 6vh;
+    width: 13vw;
+    color: rgba(255, 255, 255, 0.8);
+    border: solid 0.1vmin lawngreen;
+    text-align: center;
+    padding-top: 1.5vh;
+    border-radius: 2vh ;
+}
+
+/* Resume Page */
+.resume{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 
 @media only screen and (max-width : 600px){
     *{
