@@ -4,6 +4,7 @@ html{
     margin: 0;
     padding: 0;
 }
+
 i {
     color:lawngreen;
     display: inline;
@@ -14,7 +15,7 @@ i {
 }
 body {
     height: 99.5vh;
-    width: 50vw;
+    width: 75vw;
     background-color: #001000;
     color: white;
     padding:  0.5% 2% 0 20%; 
@@ -35,6 +36,10 @@ body {
 .subheading{
     padding: 4vh 0 4vh 0;
     font-size: 5vmin;
+}
+
+li::marker{
+    color: lawngreen;
 }
 
 /* Navigation Bar */
@@ -180,11 +185,101 @@ body {
 
 /* Resume Page */
 .resume{
+    width: 100%;
+    height: 90vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    /* background-color: pink; */
 }
 
+.resume-col1{
+    width: 25vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 5vh; */
+    /* background-color: aqua; */
+    padding: 0px 20px;
+    border: solid 0.1vmin lawngreen;
+    border-radius: 2vmin;
+    margin-right: 2.5vw;
+}
+
+.resume-col2{
+    width: 50vw;
+    height: 70vh;
+    padding-left: 5vw;
+    padding-right: 3vw;
+    border: solid 0.1vmin lawngreen;
+    border-radius: 2vmin;
+
+    /* display: flex; */
+    /* background-color: blue; */
+}
+
+.resume-subheading-text{
+    font-size: 2.3vmin;
+    margin-bottom: 3vmin;
+}
+
+.resume-button{
+    padding: 12px;
+    font-size: 1rem;
+    margin-top: 2vmin;
+    text-align: center;
+    /* border: 1px solid white; */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.095);
+}
+
+.resume-button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.active{
+    background-color: lawngreen;
+    color: black;
+}
+.resume-grid-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-content: space-evenly;
+    /* background-color: pink; */
+}
+
+.resume-grid-section-box{
+    height: 15vh;
+    width: 12vw;
+    background-color: rgba(255, 255, 255, 0.095);
+    padding: 20px 60px 20px 20px;
+    border-radius: 2vmin;
+    /* margin-bottom: 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+#resume-timeline{
+    font-size: medium;
+    color: rgb(30, 241, 170);
+    font-weight: bold;
+}
+
+#resume-section-title{
+    margin: 1vh 0;
+    font-size: 2.7vmin;
+    color: white;
+}
+#resume-section-category{
+    font-size: 2.3vmin;
+    color: white;
+}
 
 @media only screen and (max-width : 600px){
     *{
