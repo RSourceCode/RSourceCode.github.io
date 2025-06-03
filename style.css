@@ -190,6 +190,9 @@ li::marker{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
     /* background-color: pink; */
 }
 
@@ -284,9 +287,12 @@ li::marker{
 .contact{
     height: 83vh;
     width: 80vw;
-    background-color: pink;
+    /* background-color: pink; */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     margin-top: 8vh;
 }
@@ -297,10 +303,12 @@ li::marker{
     height: 70vh;
     display: flex;
     flex-direction: column;
-    /* background-color: rgba(255, 255, 255, 0.133); */
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0.09);
+    /* background-color: red; */
     border-radius: 2vmin;
-    /* margin-right: 2.5vw; */
+    padding: 2vw;
+    padding-right: 1.5vw;
+    margin-right: 2.5vw;
 }
 
 .contact-subheading-text{
@@ -311,36 +319,115 @@ li::marker{
 .contact-form{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    align-items: first baseline;
+    /* background-color:aqua; */
+    width: 35vw;
+    height: 45vh;
+    /* padding: none; */
+    /* text-align: center; */
 }
 
 .contact-form-top{
+    width: 35vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1vmin;
+    gap: 2vmin;
+    /* background-color: yellow; */
+}
+
+.contact-form-bottom{
+    /* background-color: yellow; */
+    width: 35vw;
+    height: 32vh;
 }
 
 .contact-input{
-    width: 15vw;
+    width: 16vw;
+    height: 3.5vh;
+    border: none;
+    color: white;
+    background-color: #001000;
+    padding-left: 0.5vw;
 }
+.contact-input::placeholder{
+    font-size: 1.7vmin;
+}
+
 .contact-input-long{
-    width: 30vw;
-    margin: 4vh 0;
+    width: 34vw;
+    height: 3.5vh;
+    color: white;
+    border: none;
+    margin: 3.5vh 0;
+    background-color: #001000;
+    padding-left: 0.5vw;
+}
+.contact-input-long::placeholder{
+    font-size: 1.7vmin;
 }
 .contact-input-big{
-    width: 30vw;
+    width: 34vw;
     height:15vh;
+    color: white;
+    border: none;
+    background-color: #001000;
+    padding-left: 0.5vw;
+    overflow-y: auto;
+    font-size: 2.3vmin;
+    resize: none;
+}
+
+.contact-input-big::placeholder{
+    font-size: 1.8vmin;
 }
 
 .contact-form-submit{
-    
+    height: 4vh;
+    width: 8vw;
+    margin-top: 2.5vh;
+    border-radius: 2vh;
+    border: none;
+    background-color: lawngreen;
+}
+
+.contact-form-submit:hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .contact-col2{
     width: 40vw;
-    height: 40vh;
-    background-color: blue;
+    height: 43vh;
+    padding-top: 6vh;
+}
+
+.contact-box{
+    height: 8vh;
+    width: 25vw;
+    padding: 0vh 0 3vh 1vw;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    /* background-color: pink; */
+}
+
+.contact-icon{
+    border-radius: 0;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.09);
+    height: 2.3vh;
+    width: 1.5vw;
+    padding: 14px;
+    /* background-color: chocolate; */
+    margin-right: 1vw;
+    text-align: center;
+}
+
+.contact-detail{
+    font-size: 1.8vmin;
+    color: rgba(255, 255, 255, 0.55);
+    /* background-color: blue; */
 }
 
 
