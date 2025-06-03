@@ -281,6 +281,69 @@ li::marker{
     color: white;
 }
 
+.contact{
+    height: 83vh;
+    width: 80vw;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+}
+
+.contact-col1{
+
+    width: 35vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgba(255, 255, 255, 0.133); */
+    background-color: red;
+    border-radius: 2vmin;
+    /* margin-right: 2.5vw; */
+}
+
+.contact-subheading-text{
+    font-size: 2.3vmin;
+    margin-bottom: 3vmin;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-form-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vmin;
+}
+
+.contact-input{
+    width: 15vw;
+}
+.contact-input-long{
+    width: 30vw;
+    margin: 4vh 0;
+}
+.contact-input-big{
+    width: 30vw;
+    height:15vh;
+}
+
+.contact-form-submit{
+    
+}
+
+.contact-col2{
+    width: 40vw;
+    height: 40vh;
+    background-color: blue;
+}
+
+
 @media only screen and (max-width : 600px){
     *{
         margin: 0;
