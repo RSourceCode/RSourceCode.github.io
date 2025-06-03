@@ -332,7 +332,7 @@ li::marker{
     width: 35vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2vmin;
+    gap: 0.5vmin;
     /* background-color: yellow; */
 }
 
@@ -359,7 +359,7 @@ li::marker{
     height: 3.5vh;
     color: white;
     border: none;
-    margin: 3.5vh 0;
+    margin: 1.5vh 0;
     background-color: #001000;
     padding-left: 0.5vw;
 }
@@ -394,6 +394,13 @@ li::marker{
 .contact-form-submit:hover{
     transform: scale(1.05);
     cursor: pointer;
+}
+
+.contact-error-box{
+    height: 2vmin;
+    width: 16vw;
+    color: rgb(199, 38, 38);
+    font-size: 1.2vmin;
 }
 
 .contact-col2{

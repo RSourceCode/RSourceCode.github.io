@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <div class="navbar">
@@ -45,20 +44,19 @@
             <div class="contact-subheading-text">
                 You have no other choice. <br> Give me all your details including a transaction receipt of $1000 if you want me to reply.
             </div>
-            <form class="contact-form">
+            <form class="contact-form" >
                 <div class="contact-form-top">
-                    <input class="contact-input" type="text" placeholder="First name">
+                    <input class="contact-input" id="contact-first-name" type="text" placeholder="First name"> </input>
+                    <input class="contact-input" id="contact-last-name"  type="text" placeholder="Last name"> </input>
+
+                    <div class="contact-error-box" id="contact-first-name-error-box"></div>
+                    <div class="contact-error-box" id="contact-last-name-error-box"></div>
+
+                    <input class="contact-input" id="contact-email"  type="email" placeholder="Email address"></input>
+                    <input class="contact-input"  id="contact-phone-num" type="tel" placeholder="Phone number"></input>
                     
-                    </input>
-                    <input class="contact-input"  type="text" placeholder="Last name">
-                    
-                    </input>
-                    <input class="contact-input"  type="text" placeholder="Email address">
-                    
-                    </input>
-                    <input class="contact-input"  type="text" placeholder="Phone number">
-                    
-                    </input>
+                    <div class="contact-error-box" id="contact-email-error-box"></div>
+                    <div class="contact-error-box" id="contact-phone-num-error-box"></div>
                 </div>
                 <div class="contact-form-bottom">
                     <input class="contact-input-long" type="text" placeholder="Select a service">
@@ -77,25 +75,26 @@
                 <i class="fa-solid fa-phone contact-icon"></i>
                 <div style="font-size: 2.3vmin;">
                     <div class="contact-detail">Phone</div>
-                    +91 9142102737
+                    +91 9339351742
                 </div>
             </div>
             <div class="contact-box">
                 <i class="fa-solid fa-envelope contact-icon"></i>
                 <div style="font-size: 2.3vmin;">
                     <div class="contact-detail">Email</div>
-                    youremail@gmail.com
+                    rahulsingh654932@gmail.com
                 </div>
             </div>
             <div class="contact-box">
                 <i class="fa-solid fa-location-dot contact-icon" ></i>
                 <div style="font-size: 2.3vmin; ">
                     <div class="contact-detail">Address</div>
-                    Code Corner, Tech Town 13579
+                    Hall-3, IIT Kanpur
                 </div>
             </div>
         </div>
         
     </div>
+    <script src="contact.js"></script>
 </body>
 </html>
