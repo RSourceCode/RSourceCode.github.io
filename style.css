@@ -152,6 +152,23 @@ li::marker{
     text-align: center;
     margin-right: 3vw;
 }
+.download-cv:hover .fa-cloud-arrow-down{
+    cursor: pointer;
+    /* animation-fill-mode: forwards; */
+    transition: background-color 1s;
+    background-color: lawngreen;
+    transition: color 1s;
+    color: black;
+}
+.download-cv:hover{
+    cursor: pointer;
+    /* animation-fill-mode: forwards; */
+    transition: background-color 1s;
+    background-color: lawngreen;
+    transition: color 1s;
+    color: black;
+}
+
 .existence-heading{
     text-align: center;
     height: 3vh;

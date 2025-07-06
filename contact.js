@@ -10,7 +10,7 @@ const contact_form = document.getElementsByClassName("contact-form")[0]
 const contact_form_submit = document.getElementsByClassName("contact-form-submit")[0]
 
 contact_form_submit.addEventListener("click", (event) =>{
-    event.preventDefault();
+    // event.preventDefault();
     console.log(event)
     if(contact_first_name_error_box.innerText == "" && contact_email_error_box.innerText == "" && contact_phone_error_box.innerText == ""){
         // contact_form.submit();
