@@ -61,14 +61,6 @@ li::marker{
     justify-content: space-evenly;
     align-items: center;
 }
-.nav-button{
-    background-color:lawngreen;
-    height: 5vh;
-    width: 6vw;
-    border: none;
-    border-radius: 2.5vh;
-    font-size: 2.3vmin; 
-}
 .nav-options{
     color: white;
     text-decoration: none;
@@ -76,10 +68,41 @@ li::marker{
 }
 .nav-options:hover{
     text-decoration: underline;
+    transform: translateY(-0.2vmin);
 }
+.nav-button{
+    background-color:lawngreen;
+    height: 5vh;
+    width: 6vw;
+    border: none;
+    border-radius: 2.5vh;
+    font-size: 2.3vmin; 
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent, rgba(126, 252, 0, 0.4), transparent);
+    transition: left 0.5s ease-in;
+}
+
+.nav-button:hover::before{
+    left: 100%;
+}
+
 .nav-button:hover{
-    background-color: aliceblue;
+    background-color: transparent;
+    color: lawngreen;
+    border: 1px solid lawngreen;
     cursor: pointer;
+    left: 0vw;
+    box-shadow: 0 5px 15px rgba(126, 252, 0, 0.4);
 }
 
 
@@ -115,24 +138,77 @@ li::marker{
 
 .intro-image-border-wrapper{
     padding-left: 2vw;
+    position: relative;
+}
+.intro-image-border-stationary{
+    height:49vmin;
+    width:49vmin;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
 }
 .intro-image-border{
-    height:47vmin;
-    width:47vmin;
+    height:49vmin;
+    width:49vmin;
+    position: absolute;
+    
     border-width: 0.5vmin;
-    border-color: lawngreen;
-    border-style: dashed;
     border-radius: 50%;
+    border-style: dashed;
+    border-color: lawngreen;
+    border-image: linear-gradient(45deg, rgb(0, 143, 104), rgb(250, 224, 66)); 
     box-sizing: border-box;
+    animation: rotate-and-scale-border 25s linear 0s infinite forwards, 
+               sparkle-border 2s linear 0s infinite forwards;
+    /* box-shadow: 0 0 40px rgba(255, 255, 255, 0.3); */
 }
+
+#intro-image-border2{
+    transform: scale(0);
+    animation: rotate-and-scale-border 25s linear 3.125s infinite forwards, 
+               sparkle-border 2s linear 1s infinite forwards;
+}
+
+@keyframes rotate-and-scale-border{
+    from{
+        transform: rotate(0deg) scale(0.75);
+    }
+    25%{
+        transform: rotate(90deg) scale(1.25);
+    }
+    50%{
+        transform: rotate(180deg) scale(0.75);
+    }
+    75%{
+        transform: rotate(270deg) scale(1.25);
+    }
+    to{
+        transform: rotate(360deg) scale(0.75);
+    }
+}
+
+@keyframes sparkle-border{
+    from{
+         border-image: linear-gradient(45deg, rgb(0, 143, 104), rgb(250, 224, 66)); 
+    }
+    50%{
+         border-image: linear-gradient(45deg, rgba(0, 143, 105, 0), rgba(250, 225, 66, 0));
+    }
+    to{
+         border-image: linear-gradient(45deg, rgb(0, 143, 104), rgb(250, 224, 66)); 
+    }
+}
+
 .intro-image{
     margin-left: 8vmin;
+    position: relative;
+    /* top: -47vmin; */
     height:40vmin;
     width:40vmin;
     background-image: url("Rahul.jpg");
     background-size: cover;
     justify-content: center;
-   
+    /* animation: rotate-border 25s linear 0.2s infinite reverse; */
 }
 .contact-icons{
     padding-top: 2vh;
@@ -142,8 +218,15 @@ li::marker{
     justify-content: space-between;
     align-items: center;
 }
+
+.fa-brands:hover, .fa-phone:hover, .fa-envelope:hover{
+    background-color: lawngreen;
+    transition: color 1s;
+    color: black;
+}
+
 .download-cv{
-    background-color: transparent;
+    background-color: rgba(126, 252, 0, 0);
     color: lawngreen;
     height: 7vh;
     width: 13vw;
@@ -151,23 +234,19 @@ li::marker{
     border: lawngreen groove 1px;
     text-align: center;
     margin-right: 3vw;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.download-cv:hover {
+    cursor: pointer;
+    background-color: lawngreen;
+    color: black;
 }
 .download-cv:hover .fa-cloud-arrow-down{
     cursor: pointer;
-    /* animation-fill-mode: forwards; */
-    transition: background-color 1s;
-    background-color: lawngreen;
-    transition: color 1s;
     color: black;
 }
-.download-cv:hover{
-    cursor: pointer;
-    /* animation-fill-mode: forwards; */
-    transition: background-color 1s;
-    background-color: lawngreen;
-    transition: color 1s;
-    color: black;
-}
+
 
 .existence-heading{
     text-align: center;

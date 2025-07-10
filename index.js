@@ -21,7 +21,7 @@ Download_CV.addEventListener('click', function() {
 
 // Calculating my timeline.
 const curr_date = new Date()
-const birth_date = new Date(2005, 1, 18, 23)
+const birth_date = new Date(2005, 1, 18, 1)
 let arr = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 if(curr_date.getFullYear() % 4 == 0 || curr_date.getFullYear() % 100 == 0){
     arr[1] = 29;
@@ -64,4 +64,3 @@ Existence_Val_Year.textContent = year
 Existence_Val_Month.textContent = month
 Existence_Val_Days.textContent = day
 Existence_Val_Hours.textContent = hour
-
