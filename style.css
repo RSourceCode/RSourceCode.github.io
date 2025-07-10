@@ -29,12 +29,12 @@ body {
 
 .heading{
     text-align: center;
-    padding: 15vh 0 4vh 0;
+    padding: 15vh 0 4vh;
     font-size: 10vmin;
 }
 
 .subheading{
-    padding: 4vh 0 4vh 0;
+    padding: 4vh 0;
     font-size: 5vmin;
 }
 
@@ -155,7 +155,6 @@ li::marker{
 .download-cv:hover .fa-cloud-arrow-down{
     cursor: pointer;
     /* animation-fill-mode: forwards; */
-    transition: background-color 1s;
     background-color: lawngreen;
     transition: color 1s;
     color: black;
@@ -163,7 +162,6 @@ li::marker{
 .download-cv:hover{
     cursor: pointer;
     /* animation-fill-mode: forwards; */
-    transition: background-color 1s;
     background-color: lawngreen;
     transition: color 1s;
     color: black;
@@ -474,7 +472,7 @@ li::marker{
     }
     .nav-content{
         display: flex;
-        margin: 3vh 0 0 0;
+        margin: 3vh 0 0;
         width:100vw;
         justify-content: space-evenly;
     }
